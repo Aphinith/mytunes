@@ -2,12 +2,7 @@
 var SongQueueView = Backbone.View.extend({
 
   initialize: function() {
-    //below still in progress
-    // defaults: {
-    // playFirst: function(song) {
-    //   console.log('initialize playFirst!');
-    // }
-  // },
+    // set up view with first song model
   },
 
   render: function() {
