@@ -15,6 +15,9 @@ var PlayerView = Backbone.View.extend({
   },
 
   render: function(){
+    // For some reason this.$el is UNDEFINED!!!
+    console.log('testing:', this.$el);
+    // Is the 'src' attribute of $el SUPPOSED to be defined, or changed??
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
 

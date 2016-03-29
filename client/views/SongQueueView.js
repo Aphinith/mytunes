@@ -5,9 +5,15 @@ var SongQueueView = Backbone.View.extend({
     // set up view with first song model
   },
 
-  render: function() {
-    initialize: function() {
-    };
+
+  render: function(){
+    return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
+  
+  // render: function() {
+  //   initialize: function() {
+
+  //   };
+  // }
 
 });
