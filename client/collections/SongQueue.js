@@ -19,9 +19,8 @@ var SongQueue = Songs.extend({
   playFirst: function(song){
     // console.log('playFirst was invoked');
     // call playerview model's playerview.setSong() with first song
-    console.log('playFirst - was I ever called?');
     PlayerView.prototype.setSong(this.storedSongs[0]);
-    
+    console.log('this.storedSongs inside SongQueue:', this.storedSongs)
   }
 
 })

@@ -10,11 +10,15 @@ var PlayerView = Backbone.View.extend({
   },
 
   setSong: function(song){
+    console.log('setSong inside PlayerView')
+    console.log('this is song:', song)
     this.model = song;
+    console.log('this is this.model:', this.model)
     this.render();
   },
 
   render: function(){
+    console.log('this is $el', $el);
     // For some reason this.$el is UNDEFINED!!!
     console.log('testing:', this.$el);
     // Is the 'src' attribute of $el SUPPOSED to be defined, or changed??

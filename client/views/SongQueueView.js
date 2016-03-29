@@ -7,9 +7,10 @@ var SongQueueView = Backbone.View.extend({
 
 
   render: function(){
+    // console.log("inside SongQueueView.js, this.$el is ", this.$el)
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
-  
+
   // render: function() {
   //   initialize: function() {
 
